@@ -13,7 +13,7 @@ import processing.sound.*;
 public class Main extends PApplet {
 
     int green = 400; //the green color value of the 2 squares --changes on mouseclick.
-    SoundFile sound; 
+    SoundFile sound; //the sound file!
 
     //sets up processing and prints the hello world message to the console.
     public static void main(String[] args) {
@@ -31,7 +31,7 @@ public class Main extends PApplet {
     public void setup()
     {
         background(30, 150, 100);
-        sound = new SoundFile(this, "audio/15 Tristezas de un Doble A Cut.aif");
+        sound = new SoundFile(this, "audio/15 Tristezas de un Doble A Cut.aif"); //load it -- this is an Astor Piazzolla song don't redistribute! thx -- also its aif but should work with mp3s, etc.
     }
 
     //draws some nested rectangles
@@ -48,7 +48,7 @@ public class Main extends PApplet {
     //changes the colors of the 2 squares
     public void mousePressed()
     {
-        sound.play(); 
+        sound.play(); //I play it when you press the mouse.
         if( green == 400 )
             green = 200;
         else green = 400; 
