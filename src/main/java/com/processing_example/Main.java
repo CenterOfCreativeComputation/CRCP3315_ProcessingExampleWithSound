@@ -31,7 +31,9 @@ public class Main extends PApplet {
     public void setup()
     {
         background(30, 150, 100);
-        sound = new SoundFile(this, "audio/15 Tristezas de un Doble A Cut.aif"); //load it -- this is an Astor Piazzolla song don't redistribute! thx -- also its aif but should work with mp3s, etc.
+
+        //IMPORTANT NOTE: this code does not work with mp3 -- you should convert to .wav or .aif
+        sound = new SoundFile(this, "audio/15 Tristezas de un Doble A Cut.aif"); //load it -- this is an Astor Piazzolla song don't redistribute! thx!
     }
 
     //draws some nested rectangles
